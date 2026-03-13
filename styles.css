@@ -90,8 +90,8 @@ hr { border: none; }
 }
 
 .hero-photo {
-  width: 108px;
-  height: 108px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 2px solid var(--accent);
   object-fit: cover;
@@ -119,6 +119,7 @@ hr { border: none; }
   font-weight: 700;
   line-height: 1.2;
   color: var(--text);
+  white-space: nowrap;
 }
 
 .headline em {
