@@ -1,5 +1,5 @@
 const QUOTES = {
-  founders: 'I design ecosystems where ambitious builders find momentum, capital, and each other.',
+  founders: 'I help builders & AI champions turn early curiosity into real momentum, and bring their teams along with them.',
   leaders: 'I help communities move from random results to deliberate architecture.',
   collaborators: "If you're building something serious, let's find where our work connects.",
 };
@@ -19,10 +19,11 @@ tabs.forEach(tab => {
     tab.classList.add('active');
     tab.setAttribute('aria-selected', 'true');
 
-    // Fade out, swap text, fade in
+    // Fade out, swap text + color, fade in
     quote.classList.add('fade');
     setTimeout(() => {
       quote.textContent = QUOTES[audience];
+      quote.setAttribute('data-audience', audience);
       quote.classList.remove('fade');
     }, 200);
   });
